@@ -18,16 +18,6 @@ I don't care.  You're using a defective OS so you can figure it out for yourself
 
 Do serious people even use Windows?  I think not.
 
-## Docker Cheat Sheet
-
-To see what containers are running run `docker container ps`.
-
-To stop the running container (only really relevant for windows) run `docker stop backend`.
-
-To start the container again (only really relevant for windows) run `docker start backend`.
-
-To reattach to the running container (only really relevant for windows) run `docker attach backend`.
-
 # The following instructions aren't really relevant if you're running inside of docker.
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
