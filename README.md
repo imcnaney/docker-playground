@@ -10,30 +10,11 @@ you make should be automatically detected and the project recompiled the next ti
 
 ### Linux
 
-Simply run `./go.sh`.  It will mount your local maven cache from `~/.m2` into the container as well, so you won't have to
-download artifacts every time you rebuild the container.  `Ctrl-c` will stop the server and destroy the container,
-so you start fresh every time.
-
-To connect to docker-compose's mariadb database run: `docker run -it --network docker-playground_default --rm mariadb mysql -hdb -uroot -p` and provide the password `example` (configured in docker-compose.yml)
+Simply run `docker compose up` or, if that's not a thing, run `docker-compose up`.  Note the hyphen.
 
 ### Windows
 
-All commands assume you're running them in powershell from the root of the project (the docker-playground directory).
-
-**Create a folder called `.m2` in your home directory if you don't already have one: `mkdir ~/.m2`**
-
-To create the `backend` container the first time run (on windows): `./go.cmd`.  This will create a container that you'll
-start and stop with docker commands.  Java dependencies are downloaded within the container's file system, so to avoid
-having to download them every time the script doesn't automatically delete the container every time you shut it down.
-
-To detach from the container, which on windows leaves it running but on linux kills it, press `ctrl-c`.
-
-To destroy the container so you can start fresh with `go.cmd` run `docker kill backend`.  This happens automatically
-every time you `ctrl-c` on linux.
-
-It's not clear how stable dev mode is so if you start seeing strange behavior, especially after doing a `git pull` or
-leaving it running for days, then kill the backend container and start a new one from scratch.  Some changes, like
-changing the port in `application.properties` won't be picked up until you do this.
+I don't care.  You're using a defective OS so you can figure it out for yourself.  You'll have to install docker, set the memory limit for containers, and run commands in powershell.
 
 ## Docker Cheat Sheet
 
