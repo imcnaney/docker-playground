@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    ports:
+      - "8081:8081"
+    volumes:
+      - .:/user/src
+      - ~/.m2:/root/.m2
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_DATABASE: example
+      MYSQL_ROOT_PASSWORD: example
