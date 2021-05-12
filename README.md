@@ -16,6 +16,8 @@ Simply run `docker compose up` or, if that's not a thing, run `docker-compose up
 
 I don't care.  You're using a defective OS so you can figure it out for yourself.  You'll have to install docker, set the memory limit for containers, and run commands in powershell.
 
+Do serious people even use Windows?  I think not.
+
 ## Docker Cheat Sheet
 
 To see what containers are running run `docker container ps`.
